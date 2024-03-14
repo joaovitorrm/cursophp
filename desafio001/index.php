@@ -13,7 +13,7 @@
 
         <form action="resultado.php" method="get" class="conteudo">
         
-            <label class="texto-descricao">Informe um Número:</label>
+            <div>Informe um Número:</div>
 
             <input class="input-numero" type="number" name="valor">
 

@@ -14,9 +14,15 @@
 
         <section class="conteudo"> 
 
-            <label class="texto-descricao"> O Valor digitado foi <?php echo $_GET["valor"] ?> </label>
-            <label class="texto-descricao"> Seu antecessor é <?php echo $_GET["valor"] - 1 ?> </label>
-            <label class="texto-descricao"> Seu sucessor é <?php echo $_GET["valor"] + 1 ?> </label>
+            <?php
+
+                $val = $_GET['valor'] ?? 0;                
+            
+            ?>
+
+            <div> O Valor digitado foi <?php echo (int) $val ?> </div>
+            <div> Seu antecessor é <?php echo (int) $val - 1 ?> </div>
+            <div> Seu sucessor é <?php echo (int) $val + 1?> </div>
 
             <input class="input-botao" value="Voltar" type="button" onclick="history.go(-1)">
 
