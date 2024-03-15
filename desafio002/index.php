@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Número Aleatório</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     
     <main>
 
-        <label class="titulo">Gerador de Números Aleatórios</label>
+        <span class="titulo">Gerador de Números Aleatórios</span>
 
         <section class="conteudo">
 
-            <div>Clique no botão abaixo para gerar um valor aleatório entre 0 até 100</div>
+            <p>Clique no botão abaixo para gerar um valor aleatório entre 0 até 100</p>
 
             <?php
 
@@ -26,7 +26,7 @@
 
                 if ($init == true) {
                     $val = rand(0, 100);
-                    echo "<div>O valor gerado foi <b> $val </b></div>";
+                    echo "<span>O valor gerado foi <b> $val </b></span>";
                 } else {
                     $_SESSION["init"] = true;
                 }

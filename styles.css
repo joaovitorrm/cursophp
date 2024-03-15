@@ -3,7 +3,7 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -11,37 +11,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #1f1f1f, #111111);
+    background-image: linear-gradient(to bottom, #455059, #0D0D0D);
 }
 
 main {
     display: flex;
     flex-direction: column;
-    background-color: darkcyan;
-    width: 30rem;
+    background-color: #F2F2F2;
+    width: 32rem;
     margin-top: 1rem;
     padding: 2rem 0 2rem 0;
     gap: 1rem;
     border-radius: 1rem;
+    color: #0D0D0D;
+    box-shadow: 3px 3px lightgray;
     & .titulo {
         width: 100%;
         text-align: center;
-        background-color: beige;
         font-size: 2rem;
         font-weight: bold;
+        white-space: nowrap;
     }
     & .conteudo {
         padding: 0 2rem 0 2rem;
         display: flex;
         gap: 1rem;
         flex-direction: column;
-        color: white;
+        & p {
+            margin: 0;
+            padding: 0.8rem;
+            background-color: #8AB0BF;
+            color: #0D0D0D;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+        }
     }
     & .input-botao {
         width: 100%;
         height: 2.5rem;
-        border: 0.1rem solid #1f1f1f;
-        background-color: gold;        
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        background-color: #F2B9B3;
         border-radius: 0.2rem;
         font-size: 1.1rem;
         font-weight: bold;
@@ -51,12 +60,12 @@ main {
         }
     }
     & .input-numero {
-        height: 1rem;
-        border: 0.1rem solid black;
+        height: 1.4rem;
+        border: 0.1rem solid gray;
         &:focus {
-            outline: 2px solid white;
+            outline: 1px solid black;
             outline-offset: 2px;
-            border-radius: 0.2rem;
+            border-radius: 0.1rem;
         }
     }
 
