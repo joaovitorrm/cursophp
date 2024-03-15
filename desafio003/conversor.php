@@ -15,23 +15,19 @@
         <section class="conteudo">
 
             <?php 
-                const DOLAR = 4.99;
+                $dolar = 4.99;
                 $dinheiro = $_GET["dinheiro"] ?? 0;
 
-                $conversao = (string) round($dinheiro / DOLAR, 2);
+                $conversao = (string) round($dinheiro / $dolar, 2);
 
-                for ($i = 0; $i < strlen($conversao); $i++) {
-                    if ($conversao[$i] == ",") {
-                        $conversao[$i] = ".";
-                    } else if ($conversao[$i] == ".") {
-                        $conversao[$i] = ",";
-                    }
-                };
+                $dinheiro = number_format($dinheiro, 2, ",", ".");
+                $conversao = number_format($conversao, 2, ".", ",");                
+                $dolar = number_format($dolar, 2, ",", ".");
                 
             ?>            
 
             <div><?php echo "Seus R$ $dinheiro equivalem à US$ $conversao"?></div>
-            <div><?php echo "Cotação fixa de R$ " . DOLAR . " por dolár." ?></div>
+            <div><?php echo "Cotação fixa de R$ " . $dolar . " por dolár." ?></div>
             <input class="input-botao" onclick="history.go(-1)" value="Voltar">
 
         </section>
