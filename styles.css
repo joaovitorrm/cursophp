@@ -74,6 +74,10 @@ main {
             border-radius: 0.1rem;
         }
     }
+    & .input-range {
+        accent-color: #455059;
+        margin: 0.5rem 0 0.5rem 0;
+    }
 
 }
 
