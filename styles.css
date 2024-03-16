@@ -88,6 +88,9 @@ section {
     border-radius: 1rem;
     color: #0D0D0D;
     box-shadow: 3px 3px lightgray;
+    & p {
+        padding: 1rem;
+    }
     & .titulo {
         width: 100%;
         font-size: 1rem;
