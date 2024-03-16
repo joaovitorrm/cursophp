@@ -33,7 +33,7 @@
 
     </main>
 
-    <section>
+    <section class="segundo-conteudo">
         <span class="titulo">Resultado Final</span>
         <p>Quem recebe um salário de R$ <?= number_format($salario, 2, ',', '.') ?> ganha <?= $qtd_salarios ?> salários mínimos + R$ <?= number_format($resto, 2, ',', '.') ?> </p>
     </section>

@@ -77,7 +77,11 @@ main {
 
 }
 
-section {
+li {
+    margin-left: 3rem;
+}
+
+.segundo-conteudo {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;

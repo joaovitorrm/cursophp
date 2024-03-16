@@ -41,7 +41,7 @@
 
     </main>
 
-    <section>
+    <section class="segundo-conteudo">
 
         <span class="titulo">Estrutura da Divisão</span>
 
